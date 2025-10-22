@@ -5,7 +5,7 @@ import numpy as np
 
 # エンベディングモデル初期化（初回は自動ダウンロード）
 print("エンベディングモデルをロード中...")
-model = SentenceTransformer('all-MiniLM-L6-v2')
+model = SentenceTransformer('all-MiniLM-L6-v2')#intfloat/multilingual-e5-largeとかにするともっと強い
 print("✅ モデルロード完了")
 
 def create_embedding(text: str) -> list:
